@@ -1,55 +1,56 @@
+// timeline.js
 export const timelineData = [
   {
     id: 1,
-    date: "Sep 2018",
-    title: "First Day of College",
-    description: "We all met in the dorm common room during orientation week. Little did we know this would be the start of something special.",
+    title: "The Beginning",
+    description: "We all met in the dorm common room during orientation week. Instant connections were made over shared snacks and terrible icebreaker games. Little did we know this would be the start of something special.",
     image: "/images/timeline/meet.jpg",
-    emoji: "👋"
+    emoji: "👋",
+    tags: ["First Meet", "College Days", "Nostalgia"]
   },
   {
     id: 2,
-    date: "Oct 2018",
-    title: "First Late Night Pizza Run",
-    description: "The start of our 2am food adventures that would become legendary. Alex spilled soda on Sarah's laptop but somehow it survived!",
+    title: "Midnight Pizza Adventures",
+    description: "The start of our legendary 2am food runs. Alex spilled soda on Sarah's laptop (it miraculously survived), Jamie tried to eat a whole pizza by herself, and we discovered our shared love for extra cheese and terrible jokes.",
     image: "/images/timeline/pizza.jpg",
-    emoji: "🍕"
+    emoji: "🍕",
+    tags: ["Food", "Late Nights", "Inside Jokes"]
   },
   {
     id: 3,
-    date: "Nov 2018",
-    title: "The Great Prank War Begins",
-    description: "It started with plastic wrap on the toilet seat and escalated to filling Jamie's room with balloons. We called a truce after the toothpaste oreo incident.",
-    emoji: "🎭"
+    title: "The Great Prank War",
+    description: "What began with plastic wrap on the toilet seat escalated to filling Jamie's room with 300 balloons. The toothpaste Oreo incident forced us to call a truce, but the memories (and blackmail photos) live on.",
+    emoji: "🎭",
+    tags: ["Pranks", "Shenanigans", "Bonding"]
   },
   {
     id: 4,
-    date: "Dec 2018",
-    title: "First Group Trip",
-    description: "Road trip to the mountains! We got lost, sang terrible karaoke, and bonded over hot chocolate by the fire.",
+    title: "Mountain Escape",
+    description: "Our first group trip to the mountains was equal parts chaos and magic. We got hopelessly lost, sang terrible karaoke at a roadside diner, and bonded over endless cups of hot chocolate by the fire.",
     image: "/images/timeline/trip.jpg",
-    emoji: "⛰️"
+    emoji: "⛰️",
+    tags: ["Adventure", "Road Trip", "Core Memory"]
   },
   {
     id: 5,
-    date: "Mar 2019",
-    title: "Surprise Birthday Party",
-    description: "We pulled off the ultimate surprise party for Chris. He thought we forgot, but we had been planning for weeks!",
-    emoji: "🎉"
+    title: "The Ultimate Surprise",
+    description: "We pulled off the most elaborate surprise party for Chris. He genuinely thought we forgot his birthday, but we'd been planning for weeks - complete with a custom scavenger hunt that led him to all our favorite spots.",
+    emoji: "🎉",
+    tags: ["Birthday", "Celebration", "Teamwork"]
   },
   {
     id: 6,
-    date: "Aug 2019",
-    title: "The Great Netflix Marathon",
-    description: "48 hours straight watching all Marvel movies in order. We emerged bleary-eyed but victorious.",
-    emoji: "🎬"
+    title: "Marvel Marathon Madness",
+    description: "48 hours straight watching every Marvel movie in chronological order. We emerged bleary-eyed but victorious, with inside references that still come up in conversation years later.",
+    emoji: "🎬",
+    tags: ["Movie Night", "Endurance", "Tradition"]
   },
   {
     id: 7,
-    date: "May 2020",
-    title: "Virtual Graduation Party",
-    description: "Even COVID couldn't stop us from celebrating together. Zoom dance party with custom filters!",
+    title: "Virtual Graduation Celebration",
+    description: "When COVID threatened to keep us apart, we created the most epic Zoom graduation party instead. Custom filters, synchronized dance routines, and a surprise video montage made it unforgettable.",
     image: "/images/timeline/zoom.jpg",
-    emoji: "🎓"
+    emoji: "🎓",
+    tags: ["Pandemic", "Creativity", "Milestone"]
   }
 ];
