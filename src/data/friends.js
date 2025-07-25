@@ -3,7 +3,7 @@ export const friendsData = [
     id: 1,
     name: "Beka",
     nickname: "",
-    avatar: "../assets/images/friends/bini.jpg",
+    avatar: "/images/bini.jpg",
     quote: "That's what she said!",
     stats: {
       memeGame: "9000+",
