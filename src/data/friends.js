@@ -72,7 +72,7 @@ export const friendsData = [
     id: 5,
     name: "Miky",
     nickname: "Miks",
-    avatar: "miky.jpg",
+    avatar: "miki.jpg",
     description: "Can sleep anywhere, anytime, through anything",
     stats: {
       department: "Nap Research",
