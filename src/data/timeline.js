@@ -25,11 +25,11 @@ export const timelineData = [
   },
   {
     id: 4,
-    title: "Mountain Escape",
-    description: "Our first group trip to the mountains was equal parts chaos and magic. We got hopelessly lost, sang terrible karaoke at a roadside diner, and bonded over endless cups of hot chocolate by the fire.",
-    image: "/images/timeline/trip.jpg",
+    title: "አነጀለስ ገናን በፎቶ ሲያከብሩ",
+    description: "ሁላችንም ለ ገና ቤት ሄደን አነጀለስ ብሎኩን ሞቅ ኣርገው ገናን እያከበሩ ነበር :: ",
+    image: "/images/group11.jpg",
     emoji: "⛰️",
-    tags: ["Adventure", "Road Trip", "Core Memory"]
+    tags: ["Camera Man Biruk Getnet"]
   },
   {
     id: 5,
@@ -40,17 +40,18 @@ export const timelineData = [
   },
   {
     id: 6,
-    title: "Marvel Marathon Madness",
-    description: "48 hours straight watching every Marvel movie in chronological order. We emerged bleary-eyed but victorious, with inside references that still come up in conversation years later.",
+    title: "Lab Moment",
+    description: "Someone died on another died person.",
+    image: "/images/group12.jpg",
     emoji: "🎬",
     tags: ["Movie Night", "Endurance", "Tradition"]
   },
   {
     id: 7,
-    title: "Virtual Graduation Celebration",
-    description: "When COVID threatened to keep us apart, we created the most epic Zoom graduation party instead. Custom filters, synchronized dance routines, and a surprise video montage made it unforgettable.",
-    image: "/images/timeline/zoom.jpg",
+    title: "የመጨረሻዋ ቅዳሜ ",
+    description: "",
+    image: "/images/group10.jpg",
     emoji: "🎓",
-    tags: ["Pandemic", "Creativity", "Milestone"]
+    tags: ["Camera Man Nati"]
   }
 ];

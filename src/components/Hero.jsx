@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 // Simple image paths - no imports needed
 const images = [
   "/images/group3.jpg",
+  "/images/group9.jpg",
   "/images/group2.jpg", 
   "/images/group1.jpg",
   "/images/group4.jpg"
