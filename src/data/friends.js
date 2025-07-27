@@ -11,7 +11,7 @@ export const friendsData = [
       relationship: "Half Single",
     },
     emoji: "🤣",
-    role: "Chief Meme Officer"
+    role: "ሥራ ፈት"
   },
    {
     id: 9,
@@ -24,7 +24,7 @@ export const friendsData = [
       relationship: "Half single"
     },
     emoji: "🔧",
-    role: "Chief Fix-It Officer"
+    role: "FX"
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ export const friendsData = [
       relationship: "More than couple"
     },
     emoji: "💖",
-    role: "Chief Care Officer"
+    role: "Chief Happiness Officer"
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ export const friendsData = [
       relationship: "Half Single"
     },
     emoji: "🤪",
-    role: "Chief Adventure Officer"
+    role: "Second Chief Eating  Officer"
   },
   {
     id: 4,
@@ -63,7 +63,7 @@ export const friendsData = [
       relationship: "More than couple"
     },
     emoji: "🧠",
-    role: "Chief Logic Officer"
+    role: "ሥራ ፈት"
   },
   {
     id: 5,
@@ -76,7 +76,7 @@ export const friendsData = [
       relationship: "pure single"
     },
     emoji: "😴",
-    role: "Chief Rest Officer"
+    role: "Chief Health Officer"
   },
   {
     id: 6,
@@ -89,7 +89,7 @@ export const friendsData = [
       relationship: "pure single"
     },
     emoji: "🎵",
-    role: "Chief Music Officer"
+    role: "Chief Health Officer"
   },
   {
     id: 7,
@@ -102,7 +102,7 @@ export const friendsData = [
       relationship: "Half single"
     },
     emoji: "🍽️",
-    role: "Chief Eating Officer"
+    role: "Third Chief Eating Officer"
   },
     {
     id: 13,
@@ -115,7 +115,7 @@ export const friendsData = [
       relationship: "pure single"
     },
     emoji: "🤷",
-    role: "Chief Indecision Officer"
+    role: "Chief Prank Officer"
   },
   {
     id: 8,
@@ -128,7 +128,7 @@ export const friendsData = [
       relationship: "More than couple"
     },
     emoji: "🖤",
-    role: "Chief Edge Officer"
+    role: "ሥራ ፈት"
   },
   {
     id: 10,
@@ -141,7 +141,7 @@ export const friendsData = [
       relationship: "pure single"
     },
     emoji: "🤳",
-    role: "Chief Selfie Officer"
+    role: "Chief Poetry Officer"
   },
   {
     id: 11,
@@ -155,7 +155,7 @@ export const friendsData = [
       relationship: "Half single"
     },
     emoji: "🍍",
-    role: "Chief Controversy Officer"
+    role: "ሥራ ፈት"
   },
   {
     id: 12,
@@ -168,7 +168,7 @@ export const friendsData = [
       relationship: "More than couple"
     },
     emoji: "🤓",
-    role: "Chief BS Officer"
+    role: "FX"
   },
     { 
     id: 14,
@@ -181,7 +181,7 @@ export const friendsData = [
       relationship: "single"
     },
     emoji: "🥂",
-    role: "Chief Celebration Officer"
+    role: "ሥራ ፈት"
   },
   {
     id: 15,
@@ -194,6 +194,6 @@ export const friendsData = [
       relationship: "Pure single"
     },
     emoji: "⌛",
-    role: "Chief Tardiness Officer"
+    role: "First Chief Eating Officer"
   }
 ];
