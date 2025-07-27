@@ -10,7 +10,6 @@ export const friendsData = [
       identity: "Head of Chaos",
       relationship: "Half Single",
     },
-    emoji: "🤣",
     role: "ሥራ ፈት"
   },
    {
@@ -23,7 +22,6 @@ export const friendsData = [
       identity: "Group Parent",
       relationship: "Half single"
     },
-    emoji: "🔧",
     role: "FX"
   },
   {
@@ -36,7 +34,6 @@ export const friendsData = [
       identity: "Group Parent",
       relationship: "More than couple"
     },
-    emoji: "💖",
     role: "Chief Happiness Officer"
   },
   {
@@ -49,7 +46,6 @@ export const friendsData = [
       identity: "Group Parent",
       relationship: "Half Single"
     },
-    emoji: "🤪",
     role: "Second Chief Eating  Officer"
   },
   {
@@ -62,7 +58,6 @@ export const friendsData = [
       identity: "Group Parent",
       relationship: "More than couple"
     },
-    emoji: "🧠",
     role: "ሥራ ፈት"
   },
   {
@@ -75,7 +70,6 @@ export const friendsData = [
       identity: "Group Parent",
       relationship: "pure single"
     },
-    emoji: "😴",
     role: "Chief Health Officer"
   },
   {
@@ -88,7 +82,6 @@ export const friendsData = [
       identity: "Group Parent",
       relationship: "pure single"
     },
-    emoji: "🎵",
     role: "Chief Health Officer"
   },
   {
@@ -101,7 +94,6 @@ export const friendsData = [
       identity: "Group Parent",
       relationship: "Half single"
     },
-    emoji: "🍽️",
     role: "Third Chief Eating Officer"
   },
     {
@@ -114,7 +106,6 @@ export const friendsData = [
       identity: "Group Parent",
       relationship: "pure single"
     },
-    emoji: "🤷",
     role: "Chief Prank Officer"
   },
   {
@@ -127,7 +118,6 @@ export const friendsData = [
       identity: "Group Parent",
       relationship: "More than couple"
     },
-    emoji: "🖤",
     role: "ሥራ ፈት"
   },
   {
@@ -140,7 +130,6 @@ export const friendsData = [
       identity: "Group Parent",
       relationship: "pure single"
     },
-    emoji: "🤳",
     role: "Chief Poetry Officer"
   },
   {
@@ -154,7 +143,6 @@ export const friendsData = [
       identity: "Group Parent",
       relationship: "Half single"
     },
-    emoji: "🍍",
     role: "ሥራ ፈት"
   },
   {
@@ -167,7 +155,6 @@ export const friendsData = [
       identity: "Group Parent",
       relationship: "More than couple"
     },
-    emoji: "🤓",
     role: "FX"
   },
     { 
@@ -180,7 +167,6 @@ export const friendsData = [
       identity: "Group Parent",
       relationship: "single"
     },
-    emoji: "🥂",
     role: "ሥራ ፈት"
   },
   {
@@ -193,7 +179,6 @@ export const friendsData = [
       identity: "Group Parent",
       relationship: "Pure single"
     },
-    emoji: "⌛",
     role: "First Chief Eating Officer"
   }
 ];
