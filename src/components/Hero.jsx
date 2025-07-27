@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-// Simple image paths - no imports needed
 const images = [
   "/images/group3.jpg",
   "/images/group9.jpg",

@@ -17,7 +17,7 @@ export default function FriendCard({ friend }) {
       initial={{ opacity: 0, y: 20 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5 }}
-      className="flex justify-center" // Ensures perfect centering
+      className="flex justify-center"
     >
       <div 
         className={`relative h-[500px] w-full max-w-[350px] [perspective:1000px] cursor-pointer`}
@@ -53,31 +53,27 @@ export default function FriendCard({ friend }) {
               <span className="px-2 py-1 bg-purple-100 text-purple-600 text-xs font-semibold rounded-full">
                 {friend.role}
               </span>
-              <span className="text-xs text-purple-400">Click for details →</span>
+              <span className="text-xs text-purple-400">Click for stats →</span>
             </div>
           </div>
         </div>
         
-        {/* Back of Card */}
+        {/* Back of Card - Stats Only */}
         <div className={`absolute inset-0 bg-gradient-to-br from-purple-100 to-pink-100 rounded-2xl shadow-lg p-6 flex flex-col transition-all duration-500 [transform-style:preserve-3d] ${isFlipped ? '' : '[transform:rotateY(180deg)]'} [backface-visibility:hidden] border-2 border-white`}>
-          <h3 className="text-xl font-bold text-center mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-            Friendship Dossier
+          <h3 className="text-xl font-bold text-center mb-6 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            {friend.name}'s Stats
           </h3>
           
-          <div className="grid grid-cols-2 gap-3 mb-4">
+          <div className="grid grid-cols-1 gap-4">
             {Object.entries(friend.stats).map(([key, value]) => (
-              <div key={key} className="bg-white/80 rounded-lg p-2 shadow-sm">
-                <p className="text-xs font-medium text-gray-500 capitalize">{key}</p>
-                <p className="font-bold text-purple-600">{value}</p>
+              <div key={key} className="bg-white/90 rounded-xl p-4 shadow-sm">
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">{key}</p>
+                <p className="text-lg font-bold text-purple-600">{value}</p>
               </div>
             ))}
           </div>
           
-          <div className="bg-white/80 rounded-lg p-3 flex-1 overflow-y-auto">
-            <p className="text-sm text-gray-700">{friend.bio}</p>
-          </div>
-          
-          <p className="mt-2 text-center text-xs text-purple-400">← Click to return</p>
+          <p className="mt-auto pt-4 text-center text-xs text-purple-400">← Click to return</p>
         </div>
       </div>
     </motion.div>

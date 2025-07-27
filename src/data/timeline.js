@@ -3,10 +3,10 @@ export const timelineData = [
   {
     id: 1,
     title: "The Beginning",
-    description: "We all met in the dorm common room during orientation week. Instant connections were made over shared snacks and terrible icebreaker games. Little did we know this would be the start of something special.",
+    description: "We all met at DBU. Unbroken connections were made between us instantly. Little did we know this would be the start of something special.",
     image: "/images/timeline/meet.jpg",
     emoji: "👋",
-    tags: ["First Meet", "College Days", "Nostalgia"]
+    tags: ["First Meet", "Unbroken connections"]
   },
   {
     id: 2,
