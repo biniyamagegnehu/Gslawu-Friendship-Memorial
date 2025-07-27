@@ -10,11 +10,11 @@ export const timelineData = [
   },
   {
     id: 2,
-    title: "Midnight Pizza Adventures",
-    description: "The start of our legendary 2am food runs. Alex spilled soda on Sarah's laptop (it miraculously survived), Jamie tried to eat a whole pizza by herself, and we discovered our shared love for extra cheese and terrible jokes.",
+    title: "Food Adventures",
+    description: "Here is not third world war in Gaza or Ukrain. Here is the best eating tradition of Gslawu in DBU.",
     image: "/images/timeline/pizza.jpg",
     emoji: "🍕",
-    tags: ["Food", "Late Nights", "Inside Jokes"]
+    tags: ["Food", "Fighting", "Satsfaction"]
   },
   {
     id: 3,
@@ -33,10 +33,10 @@ export const timelineData = [
   },
   {
     id: 5,
-    title: "The Ultimate Surprise",
-    description: "We pulled off the most elaborate surprise party for Chris. He genuinely thought we forgot his birthday, but we'd been planning for weeks - complete with a custom scavenger hunt that led him to all our favorite spots.",
+    title: "Barthday Celebration",
+    description: "መቼም ይሄ ጀማ ልደት ሲያከብር ያየ ሰው በዚህ እድሜዉ ክርስትና አያስነሱት ነው ብሎ መሳለቁ አይቀርም.",
     emoji: "🎉",
-    tags: ["Birthday", "Celebration", "Teamwork"]
+    tags: ["Birthday", "Celebration", "water"]
   },
   {
     id: 6,

@@ -9,6 +9,7 @@ export const friendsData = [
       department: "Data Science",
       identity: "ማን ያዉቃል",
       relationship: "Half Single",
+      club : "Liverpool"
     },
     role: "ሥራ ፈት"
   },
@@ -20,7 +21,8 @@ export const friendsData = [
     stats: {
       department: "COTM",
       identity: "ማን ያዉቃል",
-      relationship: "Half single"
+      relationship: "Half single",
+      club : "Man United"
     },
     role: "FX"
   },
@@ -32,7 +34,8 @@ export const friendsData = [
     stats: {
       department: "COTM",
       identity: "ማን ያዉቃል",
-      relationship: "More than couple"
+      relationship: "More than couple",
+      club : "Chelsea"
     },
     role: "Chief Happiness Officer"
   },
@@ -44,7 +47,8 @@ export const friendsData = [
     stats: {
       department: "Computer Science",
       identity: "ማን ያዉቃል",
-      relationship: "Half Single"
+      relationship: "Half Single",
+      club : "Man United"
     },
     role: "Second Chief Eating  Officer"
   },
@@ -56,7 +60,8 @@ export const friendsData = [
     stats: {
       department: "Computer Science",
       identity: "ማን ያዉቃል",
-      relationship: "More than couple"
+      relationship: "More than couple",
+      club : "Man United"
     },
     role: "ሥራ ፈት"
   },
@@ -68,7 +73,8 @@ export const friendsData = [
     stats: {
       department: "Medicine",
       identity: "ማን ያዉቃል",
-      relationship: "pure single"
+      relationship: "pure single",
+      club : "Arsenal"
     },
     role: "Chief Health Officer"
   },
@@ -80,7 +86,8 @@ export const friendsData = [
     stats: {
       department: "Medicine",
       identity: "ማን ያዉቃል",
-      relationship: "pure single"
+      relationship: "pure single",
+      club : "Man United"
     },
     role: "Chief Health Officer"
   },
@@ -92,7 +99,8 @@ export const friendsData = [
     stats: {
       department: "Data Science",
       identity: "ማን ያዉቃል",
-      relationship: "Half single"
+      relationship: "Half single",
+      club : "Man City"
     },
     role: "Third Chief Eating Officer"
   },
@@ -104,7 +112,8 @@ export const friendsData = [
     stats: {
       department: "Computer Science",
       identity: "ማን ያዉቃልt",
-      relationship: "pure single"
+      relationship: "pure single",
+      club : "Man United"
     },
     role: "Chief Prank Officer"
   },
@@ -116,7 +125,8 @@ export const friendsData = [
     stats: {
       department: "Software Engineering",
       identity: "ማን ያዉቃል",
-      relationship: "More than couple"
+      relationship: "More than couple",
+      club : "Liverpool"
     },
     role: "ሥራ ፈት"
   },
@@ -128,7 +138,8 @@ export const friendsData = [
     stats: {
       department: "Data Science",
       identity: "ማን ያዉቃል",
-      relationship: "pure single"
+      relationship: "pure single",
+      club : "Neutral"
     },
     role: "Chief Poetry Officer"
   },
@@ -137,11 +148,12 @@ export const friendsData = [
     name: "Yeabsira",
     nickname: "",
     avatar: "yeabsira.jpg",
-    description: "ስለምን  ትጨነቃለህ የእግዚአብሄር ልጅ",
+    description: "ስለምን  ትጨነቃለህ አንተ የእግዚአብሄር ልጅ አይደለህንም",
     stats: {
       department: "Public Health",
       identity: "ማን ያዉቃል",
-      relationship: "Half single"
+      relationship: "Half single",
+      club : "Neutral"
     },
     role: "ሥራ ፈት"
   },
@@ -153,7 +165,8 @@ export const friendsData = [
     stats: {
       department: "Social Science",
       identity: "ማን ያዉቃል",
-      relationship: "More than couple"
+      relationship: "More than couple",
+      club : "Man United"
     },
     role: "FX"
   },
@@ -165,7 +178,8 @@ export const friendsData = [
     stats: {
       department: "Computer Science",
       identity: "ማን ያዉቃል",
-      relationship: "single"
+      relationship: "single",
+      club : "Liverpool"
     },
     role: "ሥራ ፈት"
   },
@@ -177,7 +191,8 @@ export const friendsData = [
     stats: {
       department: "Software Engineering",
       identity: "ማን ያዉቃል",
-      relationship: "Pure single"
+      relationship: "Pure single",
+      club : "Arsenal"
     },
     role: "First Chief Eating Officer"
   }
