@@ -7,7 +7,7 @@ export const friendsData = [
     description: "ምንሜና",
     stats: {
       department: "Data Science",
-      identity: "Head of Chaos",
+      identity: "ማን ያዉቃል",
       relationship: "Half Single",
     },
     role: "ሥራ ፈት"
@@ -19,7 +19,7 @@ export const friendsData = [
     description: "Hello Everybody",
     stats: {
       department: "COTM",
-      identity: "Group Parent",
+      identity: "ማን ያዉቃል",
       relationship: "Half single"
     },
     role: "FX"
@@ -31,7 +31,7 @@ export const friendsData = [
     description: "ወንድ ልጅ ካማረ ሴት ነው ወንድ ልጅ ሲያስጠላበት ነው",
     stats: {
       department: "COTM",
-      identity: "Group Parent",
+      identity: "ማን ያዉቃል",
       relationship: "More than couple"
     },
     role: "Chief Happiness Officer"
@@ -43,7 +43,7 @@ export const friendsData = [
     description: "ሳመቺኝ",
     stats: {
       department: "Computer Science",
-      identity: "Group Parent",
+      identity: "ማን ያዉቃል",
       relationship: "Half Single"
     },
     role: "Second Chief Eating  Officer"
@@ -55,7 +55,7 @@ export const friendsData = [
     description: "አይይይ",
     stats: {
       department: "Computer Science",
-      identity: "Group Parent",
+      identity: "ማን ያዉቃል",
       relationship: "More than couple"
     },
     role: "ሥራ ፈት"
@@ -64,10 +64,10 @@ export const friendsData = [
     id: 5,
     name: "Dr. Miky",
     avatar: "miki.jpg",
-    description: "Can sleep anywhere, anytime, through anything",
+    description: "",
     stats: {
-      department: "Medicen",
-      identity: "Group Parent",
+      department: "Medicine",
+      identity: "ማን ያዉቃል",
       relationship: "pure single"
     },
     role: "Chief Health Officer"
@@ -78,8 +78,8 @@ export const friendsData = [
     avatar: "biruk2.jpg",
     description: "አሳይሃለሁ",
     stats: {
-      department: "medicin",
-      identity: "Group Parent",
+      department: "Medicine",
+      identity: "ማን ያዉቃል",
       relationship: "pure single"
     },
     role: "Chief Health Officer"
@@ -91,7 +91,7 @@ export const friendsData = [
     description: "",
     stats: {
       department: "Data Science",
-      identity: "Group Parent",
+      identity: "ማን ያዉቃል",
       relationship: "Half single"
     },
     role: "Third Chief Eating Officer"
@@ -103,7 +103,7 @@ export const friendsData = [
     description: "Scholaru ተሳካ",
     stats: {
       department: "Computer Science",
-      identity: "Group Parent",
+      identity: "ማን ያዉቃልt",
       relationship: "pure single"
     },
     role: "Chief Prank Officer"
@@ -115,7 +115,7 @@ export const friendsData = [
     description: "አንኦቭርም",
     stats: {
       department: "Software Engineering",
-      identity: "Group Parent",
+      identity: "ማን ያዉቃል",
       relationship: "More than couple"
     },
     role: "ሥራ ፈት"
@@ -127,7 +127,7 @@ export const friendsData = [
     description: "ገጣሚዉ",
     stats: {
       department: "Data Science",
-      identity: "Group Parent",
+      identity: "ማን ያዉቃል",
       relationship: "pure single"
     },
     role: "Chief Poetry Officer"
@@ -140,7 +140,7 @@ export const friendsData = [
     description: "ስለምን  ትጨነቃለህ የእግዚአብሄር ልጅ",
     stats: {
       department: "Public Health",
-      identity: "Group Parent",
+      identity: "ማን ያዉቃል",
       relationship: "Half single"
     },
     role: "ሥራ ፈት"
@@ -152,7 +152,7 @@ export const friendsData = [
     description: "ቆቀር በሻይ",
     stats: {
       department: "Social Science",
-      identity: "Group Parent",
+      identity: "ማን ያዉቃል",
       relationship: "More than couple"
     },
     role: "FX"
@@ -164,7 +164,7 @@ export const friendsData = [
     description: "አንቺ ፓፓ አንዴነሽ",
     stats: {
       department: "Computer Science",
-      identity: "Group Parent",
+      identity: "ማን ያዉቃል",
       relationship: "single"
     },
     role: "ሥራ ፈት"
@@ -176,7 +176,7 @@ export const friendsData = [
     description: "ራሥህን እንዳትዋሽ",
     stats: {
       department: "Software Engineering",
-      identity: "Group Parent",
+      identity: "ማን ያዉቃል",
       relationship: "Pure single"
     },
     role: "First Chief Eating Officer"
