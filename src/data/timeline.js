@@ -4,7 +4,7 @@ export const timelineData = [
     id: 1,
     title: "The Beginning",
     description: "We all met at DBU. Unbroken connections were made between us instantly. Little did we know this would be the start of something special.",
-    image: "/images/timeline/meet.jpg",
+    images: ["/images/timeline/meet.jpg"],
     emoji: "👋",
     tags: ["First Meet", "Unbroken connections"]
   },
@@ -12,7 +12,7 @@ export const timelineData = [
     id: 2,
     title: "Food Adventures",
     description: "Here is not third world war in Gaza or Ukrain. Here is the best eating tradition of Gslawu in DBU.",
-    image: "/images/timeline/pizza.jpg",
+    images: ["/images/timeline/pizza.jpg"],
     emoji: "🍕",
     tags: ["Food", "Fighting", "Satsfaction"]
   },
@@ -27,7 +27,7 @@ export const timelineData = [
     id: 4,
     title: "አነጀለስ ገናን በፎቶ ሲያከብሩ",
     description: "ሁላችንም ለ ገና ቤት ሄደን አነጀለስ ብሎኩን ሞቅ ኣርገው ገናን እያከበሩ ነበር :: ",
-    image: "/images/group11.jpg",
+    images: ["/images/group11.jpg"],
     emoji: "⛰️",
     tags: ["Camera Man Biruk Getnet"]
   },
@@ -40,17 +40,22 @@ export const timelineData = [
   },
   {
     id: 6,
-    title: "Lab Moment",
-    description: "Someone died on another died person.",
-    image: "/images/group12.jpg",
+    title: "Lab Moments",
+    description: "",
+    images: [
+      "/images/g1.jpg",
+      "/images/group12.jpg",
+      "/images/group13.jpg",
+      "/images/g3.jpg"
+    ],
     emoji: "🎬",
-    tags: ["Movie Night", "Endurance", "Tradition"]
+    tags: ["Camera Man unknown"]
   },
   {
     id: 7,
-    title: "የመጨረሻዋ ቅዳሜ ",
+    title: "The Last Satureday",
     description: "",
-    image: "/images/group10.jpg",
+    images: ["/images/group10.jpg"],
     emoji: "🎓",
     tags: ["Camera Man Nati"]
   }

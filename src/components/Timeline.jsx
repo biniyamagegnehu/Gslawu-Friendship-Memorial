@@ -1,4 +1,5 @@
 // Timeline.jsx
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -7,6 +8,20 @@ const TimelineItem = ({ event, isLast }) => {
     triggerOnce: true,
     threshold: 0.1
   });
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => 
+      prev === event.images.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => 
+      prev === 0 ? event.images.length - 1 : prev - 1
+    );
+  };
 
   return (
     <motion.div
@@ -32,14 +47,63 @@ const TimelineItem = ({ event, isLast }) => {
           whileHover={{ scale: 1.02 }}
           className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
         >
-          {/* Image if available */}
-          {event.image && (
-            <div className="mb-4 overflow-hidden rounded-lg">
-              <img 
-                src={event.image} 
-                alt={event.title} 
-                className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
-              />
+          {/* Image slider */}
+          {event.images && event.images.length > 0 && (
+            <div className="mb-4 rounded-lg overflow-hidden relative group">
+              <div className="relative h-48 w-full">
+                <img 
+                  src={event.images[currentImageIndex]} 
+                  alt={`${event.title} memory ${currentImageIndex + 1}`}
+                  className="w-full h-full object-cover"
+                />
+                
+                {/* Navigation arrows */}
+                {event.images.length > 1 && (
+                  <>
+                    <button 
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        prevImage();
+                      }}
+                      className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </button>
+                    <button 
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        nextImage();
+                      }}
+                      className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </button>
+                  </>
+                )}
+              </div>
+              
+              {/* Dots indicator */}
+              {event.images.length > 1 && (
+                <div className="flex justify-center mt-2 space-x-2">
+                  {event.images.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setCurrentImageIndex(index);
+                      }}
+                      className={`w-2 h-2 rounded-full transition-colors ${
+                        index === currentImageIndex ? 'bg-purple-600' : 'bg-gray-300'
+                      }`}
+                      aria-label={`Go to image ${index + 1}`}
+                    />
+                  ))}
+                </div>
+              )}
             </div>
           )}
           
