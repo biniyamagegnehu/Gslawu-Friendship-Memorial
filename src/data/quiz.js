@@ -1,21 +1,21 @@
 export const quizQuestions = [
   {
     id: 1,
-    question: "Who is most likely to forget their keys?",
-    options: ["Beka", "Kok", "Jamal", "Chris"],
-    correctAnswer: "Jemal"
+    question: "Who is most lazy guy?",
+    options: ["Beka", "Estif", "Awol", "Bini"],
+    correctAnswer: "Awol"
   },
   {
     id: 2,
-    question: "Who suggested we sneak into that concert?",
-    options: ["Beka", "Kok", "Jamal", "Chris"],
-    correctAnswer: "Chris"
+    question: "Who wake up us at midnignt?",
+    options: ["Beka", "Kok", "Awol", "Chris"],
+    correctAnswer: "Awol"
   },
   {
     id: 3,
     question: "Who actually remembered everyone's birthdays?",
-    options: ["Beka", "Kok", "Jamal", "Chris"],
-    correctAnswer: "Chris"
+    options: ["Miky", "Bisrat", "Jamal", "Beka"],
+    correctAnswer: "Beka"
   },
   {
     id: 4,

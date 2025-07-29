@@ -53,7 +53,7 @@ export default function ThankYouModal({ onClose }) {
               anyone could ask for. This is just the beginning of our story!
             </p>
             <p className="text-lg font-medium dark:text-white">
-              - Your Squad
+              - Biniyam Your Friend
             </p>
           </div>
         </motion.div>
