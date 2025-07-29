@@ -18,15 +18,39 @@ export const timelineData = [
   },
   {
     id: 3,
-    title: "The Great Prank War",
-    description: "What began with plastic wrap on the toilet seat escalated to filling Jamie's room with 300 balloons. The toothpaste Oreo incident forced us to call a truce, but the memories (and blackmail photos) live on.",
+    title: "Dorm Life",
+    description: "",
+        images: [
+      "/images/g4.jpg",
+      "/images/g9.jpg",
+      "/images/d4.jpg",
+      "/images/g7.jpg",
+      "/images/d2.jpg",
+      "/images/d3.jpg",
+      "/images/d8.jpg",
+      "/images/d9.jpg"
+    ],
     emoji: "🎭",
-    tags: ["Pranks", "Shenanigans", "Bonding"]
+    tags: ["Pranks", "Beso shaking", "Fun"]
+  },
+    {
+    id: 8,
+    title: "ሃይማኖታዊ ጉዞዎች",
+        images: [
+      "/images/h5.jpg",
+      "/images/g2.jpg",
+      "/images/h1.jpg",
+      "/images/h3.jpg",
+      "/images/h4.jpg",
+      "/images/g5.jpg",
+    ],
+    emoji: "🎭",
+    tags: ["ንግስ", "በአላት", "ቅዱስ ቦታዎች"]
   },
   {
     id: 4,
-    title: "አነጀለስ ገናን በፎቶ ሲያከብሩ",
-    description: "ሁላችንም ለ ገና ቤት ሄደን አነጀለስ ብሎኩን ሞቅ ኣርገው ገናን እያከበሩ ነበር :: ",
+    title: "Charismas",
+    description: "Holyday celebration in dorm. ",
     images: ["/images/group11.jpg"],
     emoji: "⛰️",
     tags: ["Camera Man Biruk Getnet"]
