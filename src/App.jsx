@@ -8,7 +8,7 @@ import SpotifyEmbed from './components/SpotifyEmbed'
 import MemoryGacha from './components/MemoryGacha'
 import MemeGallery from './components/MemeGallery'
 import FriendshipQuiz from './components/FriendshipQuiz'
-import GroupChat from './components/GroupChat'
+import PhotoGallery from './components/PhotoGallery';
 import HallOfShame from './components/HallOfShame'
 import ThankYouModal from './components/ThankYouModal'
 import EasterEgg from './components/EasterEgg'
@@ -90,7 +90,7 @@ function App() {
         <MemoryGacha />
         <MemeGallery />
         <FriendshipQuiz />
-        <GroupChat />
+        <PhotoGallery />
         <HallOfShame />
       </div>
 
