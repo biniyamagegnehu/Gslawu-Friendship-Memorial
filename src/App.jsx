@@ -3,13 +3,9 @@ import { motion } from 'framer-motion'
 import Layout from './components/Layout'
 import Timeline from './components/Timeline'
 import FriendCard from './components/FriendCard'
-import JokeGenerator from './components/JokeGenerator'
 import SpotifyEmbed from './components/SpotifyEmbed'
-import MemoryGacha from './components/MemoryGacha'
-import MemeGallery from './components/MemeGallery'
 import FriendshipQuiz from './components/FriendshipQuiz'
 import PhotoGallery from './components/PhotoGallery';
-import HallOfShame from './components/HallOfShame'
 import ThankYouModal from './components/ThankYouModal'
 import EasterEgg from './components/EasterEgg'
 import { timelineData } from './data/timeline'
@@ -80,18 +76,18 @@ function App() {
           </div>
         </section>
 
-        <JokeGenerator />
+        {/* <JokeGenerator /> */}
         
         <SpotifyEmbed 
           url="https://open.spotify.com/embed/playlist/37i9dQZF1DX4WYpdgoIcn6" 
           title="Our Squad Anthems"
         />
         
-        <MemoryGacha />
-        <MemeGallery />
+        {/* <MemoryGacha />
+        <MemeGallery /> */}
         <FriendshipQuiz />
         <PhotoGallery />
-        <HallOfShame />
+        {/* <HallOfShame /> */}
       </div>
 
       {/* Final Thank You */}
