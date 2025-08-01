@@ -1,8 +1,22 @@
 @import "tailwindcss";
 
+/* Dark Theme Colors */
+:root {
+  --friendBlack: #0F0F0F;
+  --friendGray: #1A1A1A;
+  --friendWhite: #F5F5F5;
+  --friendLightGray: #B0B0B0;
+  --electricBlue: #3ABEFF;
+  --hotPink: #FF4DA6;
+  --neonYellow: #FFD500;
+  --mintGreen: #5CF2B2;
+}
+
 /* Custom styles */
 body {
   font-family: 'Inter', sans-serif;
+  background-color: var(--friendBlack);
+  color: var(--friendWhite);
 }
 
 /* Smooth scrolling */
@@ -10,20 +24,51 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar - Dark Theme Version */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--friendGray);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: var(--electricBlue);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: var(--hotPink);
 }
+
+/* Glow effect */
+.hover-glow:hover {
+  box-shadow: 0 0 10px rgba(58, 190, 255, 0.5);
+}
+
+/* Animation classes */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Utility classes for colors */
+.bg-friendBlack { background-color: var(--friendBlack); }
+.bg-friendGray { background-color: var(--friendGray); }
+.text-friendWhite { color: var(--friendWhite); }
+.text-friendLightGray { color: var(--friendLightGray); }
+.text-electricBlue { color: var(--electricBlue); }
+.text-hotPink { color: var(--hotPink); }
+.border-electricBlue { border-color: var(--electricBlue); }
+.bg-electricBlue { background-color: var(--electricBlue); }
+.bg-hotPink { background-color: var(--hotPink); }
+.hover\:bg-hotPink:hover { background-color: var(--hotPink); }

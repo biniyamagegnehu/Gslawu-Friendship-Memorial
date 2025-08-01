@@ -1,8 +1,8 @@
 export default function SpotifyEmbed({ url, title = "Our Playlist" }) {
   return (
-    <section className="py-10">
-      <h2 className="text-4xl font-bold mb-6 text-center">{title}</h2>
-      <div className="max-w-2xl mx-auto bg-white p-6 rounded-xl shadow-lg">
+    <section className="py-10 bg-friendBlack">
+      <h2 className="text-4xl font-bold mb-6 text-center text-friendWhite">{title}</h2>
+      <div className="max-w-2xl mx-auto bg-friendGray p-6 rounded-xl shadow-lg border border-friendGray/50">
         <iframe
           src={url}
           width="100%"
@@ -13,7 +13,7 @@ export default function SpotifyEmbed({ url, title = "Our Playlist" }) {
           loading="lazy"
           className="rounded-lg"
         ></iframe>
-        <p className="mt-4 text-center text-gray-600">
+        <p className="mt-4 text-center text-friendLightGray">
           The soundtrack to our friendship
         </p>
       </div>

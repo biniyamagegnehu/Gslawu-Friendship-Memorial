@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion' // Fixed import
+import { motion, AnimatePresence } from 'framer-motion'
 import Confetti from 'react-confetti'
 import { useWindowSize } from 'react-use'
 import { Howl } from 'howler'
@@ -27,7 +27,6 @@ export default function EasterEgg() {
 
   return (
     <>
-      {/* Hidden clickable area */}
       <motion.div
         className="fixed bottom-4 left-4 w-12 h-12 cursor-pointer z-40"
         whileHover={{ scale: 1.2 }}
@@ -42,7 +41,6 @@ export default function EasterEgg() {
         </motion.div>
       </motion.div>
 
-      {/* Easter Egg Reveal */}
       <AnimatePresence>
         {showEgg && (
           <motion.div
@@ -51,17 +49,21 @@ export default function EasterEgg() {
             exit={{ opacity: 0 }}
             className="fixed inset-0 flex items-center justify-center z-30 pointer-events-none"
           >
-            {showConfetti && <Confetti width={width} height={height} />}
+            {showConfetti && <Confetti 
+              width={width} 
+              height={height} 
+              colors={['#3ABEFF', '#FF4DA6', '#FFD500']}
+            />}
             
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0 }}
-              className="bg-yellow-200 p-6 rounded-xl shadow-lg max-w-xs text-center"
+              className="bg-friendGray p-6 rounded-xl shadow-lg max-w-xs text-center border-2 border-neonYellow"
             >
               <div className="text-6xl mb-4">🦄</div>
-              <h4 className="text-xl font-bold mb-2">You found the Easter Egg!</h4>
-              <p className="text-sm">Remember when we thought unicorns were real in freshman year?</p>
+              <h4 className="text-xl font-bold mb-2 text-neonYellow">You found the Easter Egg!</h4>
+              <p className="text-sm text-friendLightGray">Remember when we thought unicorns were real in freshman year?</p>
             </motion.div>
           </motion.div>
         )}

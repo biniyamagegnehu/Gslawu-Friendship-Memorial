@@ -1,14 +1,12 @@
-// PhotoGallery.jsx
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { galleryPhotos } from '../data/galleryPhotos';
 
 export default function PhotoGallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(1); // 1 for forward, -1 for backward
+  const [direction, setDirection] = useState(1);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
-  // Auto-advance slides
   useEffect(() => {
     if (!isAutoPlaying || galleryPhotos.length <= 1) return;
     
@@ -24,7 +22,7 @@ export default function PhotoGallery() {
     setDirection(index > currentIndex ? 1 : -1);
     setCurrentIndex(index);
     setIsAutoPlaying(false);
-    setTimeout(() => setIsAutoPlaying(true), 8000); // Resume auto-play after pause
+    setTimeout(() => setIsAutoPlaying(true), 8000);
   };
 
   const nextSlide = () => {
@@ -42,7 +40,7 @@ export default function PhotoGallery() {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-b from-purple-50 to-white">
+    <section className="py-16 bg-friendBlack" id="memories">
       <motion.h2 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -50,13 +48,13 @@ export default function PhotoGallery() {
         viewport={{ once: true }}
         className="text-4xl font-bold mb-12 text-center"
       >
-        <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-electricBlue to-hotPink bg-clip-text text-transparent">
           Memory Gallery
         </span>
       </motion.h2>
 
       <div className="max-w-4xl mx-auto px-4">
-        <div className="relative h-[500px] overflow-hidden rounded-3xl shadow-xl">
+        <div className="relative h-[500px] overflow-hidden rounded-3xl shadow-xl border border-friendGray/50">
           {/* Main Slide */}
           <motion.div
             key={currentIndex}
@@ -74,7 +72,7 @@ export default function PhotoGallery() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent via-black/30" />
             
             {/* Caption */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+            <div className="absolute bottom-0 left-0 right-0 p-6 text-friendWhite">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -94,21 +92,17 @@ export default function PhotoGallery() {
             <>
               <button
                 onClick={prevSlide}
-                className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-black/30 hover:bg-black/50 text-white flex items-center justify-center backdrop-blur-sm transition-all"
+                className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-friendGray/80 hover:bg-electricBlue text-friendWhite flex items-center justify-center backdrop-blur-sm transition-all hover-glow"
                 aria-label="Previous photo"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
+                {/* Left arrow icon */}
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-black/30 hover:bg-black/50 text-white flex items-center justify-center backdrop-blur-sm transition-all"
+                className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-friendGray/80 hover:bg-electricBlue text-friendWhite flex items-center justify-center backdrop-blur-sm transition-all hover-glow"
                 aria-label="Next photo"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+                {/* Right arrow icon */}
               </button>
             </>
           )}
@@ -121,7 +115,11 @@ export default function PhotoGallery() {
               <button
                 key={photo.id}
                 onClick={() => goToSlide(index)}
-                className={`w-16 h-16 rounded-lg overflow-hidden transition-all duration-300 ${currentIndex === index ? 'ring-4 ring-purple-500 scale-110' : 'opacity-70 hover:opacity-100'}`}
+                className={`w-16 h-16 rounded-lg overflow-hidden transition-all duration-300 ${
+                  currentIndex === index 
+                    ? 'ring-4 ring-electricBlue scale-110 hover-glow' 
+                    : 'opacity-70 hover:opacity-100 border border-friendGray/50'
+                }`}
                 aria-label={`View photo ${index + 1}`}
               >
                 <img

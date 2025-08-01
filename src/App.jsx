@@ -5,7 +5,7 @@ import Timeline from './components/Timeline'
 import FriendCard from './components/FriendCard'
 import SpotifyEmbed from './components/SpotifyEmbed'
 import FriendshipQuiz from './components/FriendshipQuiz'
-import PhotoGallery from './components/PhotoGallery';
+import PhotoGallery from './components/PhotoGallery'
 import ThankYouModal from './components/ThankYouModal'
 import EasterEgg from './components/EasterEgg'
 import { timelineData } from './data/timeline'
@@ -24,10 +24,16 @@ function App() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="py-20 text-center px-4"
+        className="py-20 text-center px-4 bg-friendBlack"
       >
         <motion.h1 
-          className="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600"
+          className="text-5xl md:text-7xl font-bold mb-6"
+          style={{
+            background: 'linear-gradient(to right, var(--electricBlue), var(--hotPink))',
+            WebkitBackgroundClip: 'text',
+            backgroundClip: 'text',
+            color: 'transparent'
+          }}
           initial={{ y: -50 }}
           animate={{ y: 0 }}
           transition={{ type: 'spring', stiffness: 100 }}
@@ -35,7 +41,8 @@ function App() {
           Our Squad Chronicles
         </motion.h1>
         <motion.p 
-          className="text-xl text-gray-600 max-w-2xl mx-auto"
+          className="text-xl max-w-2xl mx-auto"
+          style={{ color: 'var(--friendLightGray)' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
@@ -44,6 +51,7 @@ function App() {
         </motion.p>
         <motion.div
           className="mt-8 text-4xl"
+          style={{ color: 'var(--electricBlue)' }}
           animate={{ 
             scale: [1, 1.1, 1],
             rotate: [0, 10, -10, 0]
@@ -59,12 +67,18 @@ function App() {
       </motion.section>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 space-y-20 pb-20">
+      <div className="container mx-auto px-4 space-y-20 pb-20 bg-friendBlack">
         <Timeline events={timelineData} />
         
         <section id="squad" className="py-10">
           <motion.h2 
             className="text-4xl font-bold mb-10 text-center"
+            style={{
+              background: 'linear-gradient(to right, var(--electricBlue), var(--hotPink))',
+              WebkitBackgroundClip: 'text',
+              backgroundClip: 'text',
+              color: 'transparent'
+            }}
             whileHover={{ scale: 1.05 }}
           >
             The Legendary Squad
@@ -76,35 +90,42 @@ function App() {
           </div>
         </section>
 
-        {/* <JokeGenerator /> */}
-        
         <SpotifyEmbed 
           url="https://open.spotify.com/embed/playlist/37i9dQZF1DX4WYpdgoIcn6" 
           title="Our Squad Anthems"
         />
         
-        {/* <MemoryGacha />
-        <MemeGallery /> */}
         <FriendshipQuiz />
         <PhotoGallery />
-        {/* <HallOfShame /> */}
       </div>
 
       {/* Final Thank You */}
-      <div className="py-20 text-center bg-gradient-to-b from-white to-purple-50">
+      <div 
+        className="py-20 text-center"
+        style={{
+          background: 'linear-gradient(to bottom, var(--friendBlack), var(--friendGray))'
+        }}
+      >
         <motion.button 
           onClick={() => setShowThankYou(true)}
-          className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full text-xl font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105 active:scale-95"
+          className="px-8 py-4 rounded-full text-xl font-bold shadow-lg transition-all"
+          style={{
+            background: 'linear-gradient(to right, var(--hotPink), var(--electricBlue))',
+            color: 'var(--friendWhite)'
+          }}
           whileHover={{ 
             scale: 1.05,
-            boxShadow: "0px 5px 15px rgba(0,0,0,0.1)"
+            boxShadow: '0 0 15px var(--electricBlue)'
           }}
           whileTap={{ scale: 0.95 }}
         >
           Click for a Surprise! 🎁
         </motion.button>
         
-        <p className="mt-8 text-gray-500 max-w-lg mx-auto">
+        <p 
+          className="mt-8 max-w-lg mx-auto"
+          style={{ color: 'var(--friendLightGray)' }}
+        >
           Thanks for being part of this incredible journey. Here's to many more memories together!
         </p>
       </div>

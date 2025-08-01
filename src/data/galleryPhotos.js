@@ -35,5 +35,17 @@ export const galleryPhotos = [
     {
     id: 9,
     image: "/images/s9.jpg",
+  },
+      {
+    id: 10,
+    image: "/images/g10.jpg",
+  },
+      {
+    id: 11,
+    image: "/images/g12.jpg",
+  },
+      {
+    id: 12,
+    image: "/images/s12.jpg",
   }
 ];

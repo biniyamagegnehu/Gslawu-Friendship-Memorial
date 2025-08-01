@@ -39,27 +39,27 @@ export default function FriendshipQuiz() {
   }
 
   return (
-    <section id="quiz" className="py-10 bg-purple-50 rounded-xl my-10">
-      <h2 className="text-4xl font-bold mb-10 text-center">Friendship Quiz</h2>
+    <section id="quiz" className="py-10 bg-friendGray rounded-xl my-10">
+      <h2 className="text-4xl font-bold mb-10 text-center text-friendWhite">Friendship Quiz</h2>
       
-      <div className="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+      <div className="max-w-2xl mx-auto bg-friendBlack p-8 rounded-xl shadow-lg border border-friendGray/50">
         {!showResult ? (
           <div>
             <div className="mb-6">
-              <div className="flex justify-between mb-2">
+              <div className="flex justify-between mb-2 text-friendLightGray">
                 <span>Question {currentQuestion + 1}/{quizQuestions.length}</span>
                 <span>Score: {score}</span>
               </div>
-              <div className="w-full bg-gray-200 rounded-full h-2.5">
+              <div className="w-full bg-friendGray rounded-full h-2.5">
                 <div 
-                  className="bg-purple-600 h-2.5 rounded-full" 
+                  className="bg-electricBlue h-2.5 rounded-full" 
                   style={{ width: `${((currentQuestion + 1) / quizQuestions.length) * 100}%` }}
                 ></div>
               </div>
             </div>
 
             <motion.h3 
-              className="text-2xl font-bold mb-6"
+              className="text-2xl font-bold mb-6 text-friendWhite"
               key={currentQuestion}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -77,11 +77,11 @@ export default function FriendshipQuiz() {
                   className={`w-full text-left p-4 rounded-lg border-2 transition-all ${
                     selectedAnswer === option
                       ? option === quizQuestions[currentQuestion].correctAnswer
-                        ? 'bg-green-100 border-green-500'
-                        : 'bg-red-100 border-red-500'
+                        ? 'bg-mintGreen/20 border-mintGreen text-friendWhite'
+                        : 'bg-hotPink/20 border-hotPink text-friendWhite'
                       : selectedAnswer !== null && option === quizQuestions[currentQuestion].correctAnswer
-                      ? 'bg-green-100 border-green-500'
-                      : 'hover:bg-purple-50 border-gray-200'
+                      ? 'bg-mintGreen/20 border-mintGreen text-friendWhite'
+                      : 'hover:bg-electricBlue/10 border-friendGray text-friendWhite'
                   }`}
                   whileHover={{ scale: selectedAnswer ? 1 : 1.02 }}
                   whileTap={{ scale: selectedAnswer ? 1 : 0.98 }}
@@ -97,14 +97,14 @@ export default function FriendshipQuiz() {
             animate={{ opacity: 1 }}
             className="text-center"
           >
-            <h3 className="text-3xl font-bold mb-4">{getResult().title}</h3>
-            <p className="text-xl mb-6">{getResult().description}</p>
-            <p className="text-2xl mb-6">
+            <h3 className="text-3xl font-bold mb-4 text-electricBlue">{getResult().title}</h3>
+            <p className="text-xl mb-6 text-friendLightGray">{getResult().description}</p>
+            <p className="text-2xl mb-6 text-friendWhite">
               You scored {score} out of {quizQuestions.length}!
             </p>
             <button
               onClick={resetQuiz}
-              className="px-6 py-3 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition-colors"
+              className="px-6 py-3 bg-electricBlue hover:bg-hotPink text-friendWhite rounded-lg font-medium transition-colors hover-glow"
             >
               Take Quiz Again
             </button>
