@@ -4,7 +4,7 @@ export const timelineData = [
     id: 1,
     title: "The Beginning",
     description: "We all met at DBU. Unbroken connections were made between us instantly. Little did we know this would be the start of something special.",
-    images: ["/images/timeline/meet.jpg"],
+    images: ["/images/g4.jpg"],
     emoji: "👋",
     tags: ["First Meet", "Unbroken connections"]
   },
@@ -21,7 +21,6 @@ export const timelineData = [
     title: "Dorm Life",
     description: "",
         images: [
-      "/images/g4.jpg",
       "/images/g9.jpg",
       "/images/d4.jpg",
       "/images/g7.jpg",
@@ -59,6 +58,7 @@ export const timelineData = [
     id: 5,
     title: "Barthday Celebration",
     description: "መቼም ይሄ ጀማ ልደት ሲያከብር ያየ ሰው በዚህ እድሜዉ ክርስትና አያስነሱት ነው ብሎ መሳለቁ አይቀርም.",
+    images: ["/images/b1.jpg"],
     emoji: "🎉",
     tags: ["Birthday", "Celebration", "water"]
   },
@@ -70,6 +70,8 @@ export const timelineData = [
       "/images/g1.jpg",
       "/images/group12.jpg",
       "/images/group13.jpg",
+      "/images/l1.jpg",
+      "/images/l2.jpg",
       "/images/g3.jpg"
     ],
     emoji: "🎬",

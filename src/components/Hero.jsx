@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const images = [
   "/images/group3.jpg",
   "/images/group9.jpg",
-  "/images/group2.jpg", 
+  "/images/group12.jpg", 
   "/images/group1.jpg",
   "/images/group4.jpg"
 ];
