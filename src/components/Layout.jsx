@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Navbar from './Navbar';
-import Hero from './Hero';
+import Hero from './Hero'; // Keep this import
 
 export default function Layout({ children }) {
   return (
