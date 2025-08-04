@@ -20,8 +20,8 @@ export default function Navbar() {
             <a href="#" className="text-friendWhite hover:text-hotPink transition-colors">Hero</a>
             <a href="#timeline" className="text-friendWhite hover:text-hotPink transition-colors">Timeline</a>
             <a href="#squad" className="text-friendWhite hover:text-hotPink transition-colors">The Squad</a>
-            <a href="#memories" className="text-friendWhite hover:text-hotPink transition-colors">Memories</a>
             <a href="#quiz" className="text-friendWhite hover:text-hotPink transition-colors">Quiz</a>
+            <a href="#memories" className="text-friendWhite hover:text-hotPink transition-colors">Photo Memories</a>
           </div>
           
           {/* Mobile menu button */}
