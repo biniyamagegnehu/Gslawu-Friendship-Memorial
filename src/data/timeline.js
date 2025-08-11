@@ -11,8 +11,8 @@ export const timelineData = [
   {
     id: 2,
     title: "Food Adventures",
-    description: "Here is not third world war in Gaza or Ukrain. Here is the best eating tradition of Gslawu in DBU.",
-    images: ["/images/timeline/pizza.jpg"],
+    description: "ምን ኣልባት ይሀ ጀማ ምግብ ሲበላ ካያችሁ Gaza or Yemen ያላችሁ እንዳይመስላችሁ. Here is the best eating tradition of Gslawu in DBU.",
+    images: ["/images/f1.jpg"],
     emoji: "🍕",
     tags: ["Food", "Fighting", "Satsfaction"]
   },
@@ -48,9 +48,11 @@ export const timelineData = [
   },
   {
     id: 4,
-    title: "Charismas",
-    description: "Holyday celebration in dorm. ",
-    images: ["/images/group11.jpg"],
+    title: "Holyday celebration",
+    description: "",
+    images: ["/images/group11.jpg",
+              "/images/c1.jpg"
+        ],
     emoji: "⛰️",
     tags: ["Camera Man Biruk Getnet"]
   },

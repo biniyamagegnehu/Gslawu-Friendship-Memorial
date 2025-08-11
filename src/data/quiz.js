@@ -56,12 +56,6 @@ export const quizQuestions = [
     correctAnswer: "",
     explanation: "ቆንጆ የሚባል የለም :: ወንድ ልጅ ካማረ ሴት ነው "
   },
-  {
-    id: 9,
-    question: "የጀማው cool person ማነው ?",
-    options: ["Dave", "Bisrat", "Beka", "Yaeabsira","Dr. Biruk"],
-    correctAnswer: "Dr. Biruk",
-  },
     {
     id: 10,
     question: "ከጀማው ዉስጥ አፍቃሪዉ ማነው ?",

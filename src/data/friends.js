@@ -110,7 +110,7 @@ export const friendsData = [
     avatar: "habte.jpg",
     description: "Scholaru ተሳካ",
     stats: {
-      department: "Computer Science",
+      department: "Software Engineering",
       identity: "ማን ያዉቃልt",
       relationship: "pure single",
       club : "Man United"
