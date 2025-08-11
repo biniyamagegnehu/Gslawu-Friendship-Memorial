@@ -87,7 +87,7 @@ export const friendsData = [
       department: "Medicine",
       identity: "ማን ያዉቃል",
       relationship: "pure single",
-      club : "Man United"
+      club : "Arsenal"
     },
     role: "Chief Health Officer"
   },
