@@ -62,8 +62,8 @@ export default function EasterEgg() {
               className="bg-friendGray p-6 rounded-xl shadow-lg max-w-xs text-center border-2 border-neonYellow"
             >
               <div className="text-6xl mb-4">🦄</div>
-              <h4 className="text-xl font-bold mb-2 text-neonYellow">You found the Easter Egg!</h4>
-              <p className="text-sm text-friendLightGray">Remember when we thought unicorns were real in freshman year?</p>
+              <h4 className="text-xl font-bold mb-2 text-neonYellow">Remember!</h4>
+              <p className="text-sm text-friendLightGray">Don't forget your friends because they will always remember you.</p>
             </motion.div>
           </motion.div>
         )}
