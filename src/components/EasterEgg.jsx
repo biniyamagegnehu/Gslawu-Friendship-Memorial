@@ -37,7 +37,7 @@ export default function EasterEgg() {
           transition={{ repeat: Infinity, duration: 3 }}
           className="text-4xl"
         >
-          🥚
+          🎁
         </motion.div>
       </motion.div>
 
@@ -61,7 +61,7 @@ export default function EasterEgg() {
               exit={{ scale: 0 }}
               className="bg-friendGray p-6 rounded-xl shadow-lg max-w-xs text-center border-2 border-neonYellow"
             >
-              <div className="text-6xl mb-4">🦄</div>
+              <div className="text-6xl mb-4">😍</div>
               <h4 className="text-xl font-bold mb-2 text-neonYellow">Remember!</h4>
               <p className="text-sm text-friendLightGray">Don't forget your friends because they will always remember you.</p>
             </motion.div>
